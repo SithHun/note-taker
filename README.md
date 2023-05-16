@@ -1,9 +1,12 @@
 # Note-Taker
 
 ## Description
-Allow users to create notes and save to db.json file.
-Allow users to do a GET, DELETE, and POST request and will change the db.json accordingly.
-Give each array a unique id when a POST is made.
+* Allow users to create notes and save to db.json file.
+* Allow users to do a GET, DELETE, and POST request and will change the db.json accordingly.
+* Give each array a unique id when a POST is made.
+* Delete according to id
+* Deployed APP to Heroku
+* Route backend from frontend fetch on API
 
 ## Deployed Application
 [Heroku Note Taker](https://infinite-sands-31597.herokuapp.com/notes)
