@@ -13,9 +13,9 @@ app.use(bodyParser.json());
 app.use(express.static('public'));
 
 // Route for the landing page
-// app.get('/', (req, res) => {
-//   res.sendFile(path.join(__dirname, '/public/index.html'));
-// });
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, '/public/index.html'));
+});
 
 // Route for the notes page
 app.get('/notes', (req, res) => {
@@ -24,7 +24,7 @@ app.get('/notes', (req, res) => {
 
 // Route for all other routes
 app.get('*', (req, res) => {
-  res.sendFile(__dirname + '/public/index.html');
+  res.sendFile(__dirname, '/public/index.html');
 });
 
 // Route to handle saving a new note

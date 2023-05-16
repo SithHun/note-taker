@@ -108,14 +108,6 @@ const handleNewNoteView = (e) => {
   renderActiveNote();
 };
 
-// const handleNewNoteView = (e) => {
-//   activeNote = {};
-//   renderActiveNote();
-//   noteTitle.removeAttribute('readonly');
-//   noteText.removeAttribute('readonly');
-// };
-
-
 const handleRenderSaveBtn = () => {
   if (!noteTitle.value.trim() || !noteText.value.trim()) {
     hide(saveNoteBtn);
