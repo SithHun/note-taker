@@ -76,7 +76,7 @@ const saveNotesToDb = (notes) => {
 };
 
 // Start the server
-const port = 3001; // Change this if needed
+const port = process.env.PORT || 3001; // Change this if needed
 app.listen(port, () => {
   console.log(`Server is listening on port ${port}`);
 });
